@@ -1,0 +1,201 @@
+.App {
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  outline: none;
+}
+
+#header {
+  height: 70px;
+  background-color: #1434CB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#faucetBody {
+  height: calc(40vh);
+  min-height: 500px;
+  background-color: #fcc015;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#headerLogo {
+  position: fixed;
+  height: 70px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+#walletConnect {
+  font-size: 16px;
+  color: aliceblue;
+  font-weight: 600;
+  position: fixed;
+  right: 20px;
+}
+
+.faucet-text-bold{
+  /* color: #1434CB; */
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#addressInput{
+  height: 28px;
+  width: 500px;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+#requestButton{
+  height: 28px;
+  background-color: #1434CB;
+  padding: 1px 2px 1px 2px;
+  border: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1434CB;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+#requestBox{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+#historyBody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.historyRow {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  border-bottom: solid;
+  border-bottom-color: rgb(197, 197, 197);
+  border-bottom-width: 1px;
+}
+
+.cell-title{
+  font-size: 23px !important;
+  font-weight: bold !important;
+}
+
+.history-cell {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  width: 33%;
+  text-align: center;
+  font-weight: 500;
+}
+
+#historySubTitle {
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+  #faucetBody {
+    height: calc(100vh - 60px);
+  }
+
+  #headerLogo{
+    position: relative;
+    left: 0;
+    font-size: 22px;
+    left: 20px;
+  }
+
+  #header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #walletConnect {
+    right: 5px;
+    font-size: 14px;
+  }
+
+  #requestBox{
+    flex-direction: column;
+  }
+
+  .faucet-text-bold{
+    font-size: 22px;
+  }
+
+  #contentWrapper{
+    width: 85%;
+  }
+
+  #addressInput{
+    width: 100%;
+    padding: 0;
+  }
+
+  #requestButton{
+    width: 100%;
+    padding: 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #historySubTitle{
+    font-size: 12px;
+  }
+
+  .cell-title{
+    font-size: 16px !important;
+  }
+
+  .history-cell {
+    font-size: 12px;
+  }
+
+  .historyRow {
+    width: 100%;
+  }
+}
